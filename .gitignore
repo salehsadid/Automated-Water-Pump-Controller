@@ -1,0 +1,264 @@
+# Comprehensive .gitignore for Automated Water Pump Controller
+
+# ===========================
+# General
+# ===========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.log
+*.tmp
+*.temp
+
+# ===========================
+# Hardware Files (KiCad/Eagle)
+# ===========================
+# KiCad
+*.tmp
+*.bak
+*.bck
+*-bak
+*-cache.lib
+*-cache.pretty/
+*.kicad_pcb-bak
+*.sch-bak
+*~
+_autosave-*
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+
+# Eagle
+*.b#?
+*.s#?
+*.l#?
+*.lck
+*.job
+
+# Gerber files (comment out if you want to track them)
+*.gbr
+*.gto
+*.gtp
+*.gts
+*.gtl
+*.gbl
+*.gbs
+*.gbo
+*.drill
+*.drl
+*.exc
+
+# ===========================
+# Firmware (Arduino/PlatformIO)
+# ===========================
+# PlatformIO
+.pio/
+.vscode/.browse.c_cpp.db*
+.vscode/c_cpp_properties.json
+.vscode/launch.json
+.vscode/settings.json
+
+# Arduino IDE
+*.hex
+*.elf
+*.map
+
+# Build outputs
+build/
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+
+# ESP32 specific
+sdkconfig
+sdkconfig.old
+sdkconfig.h
+
+# ===========================
+# Android App (Flutter)
+# ===========================
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio
+android/.gradle/
+android/captures/
+android/gradlew
+android/gradlew.bat
+android/local.properties
+android/**/GeneratedPluginRegistrant.java
+android/key.properties
+
+# iOS
+ios/Podfile.lock
+ios/Runner.xcworkspace/
+ios/Runner/GeneratedPluginRegistrant.*
+ios/.symlinks/
+ios/Flutter/App.framework/
+ios/Flutter/Flutter.framework/
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/app.flx
+ios/Flutter/app.zip
+ios/Flutter/flutter_assets/
+ios/Flutter/flutter_export_environment.sh
+ios/ServiceDefinitions.json
+ios/Runner/GeneratedPluginRegistrant.*
+
+# Web
+web/favicon.png
+web/icons/
+web/manifest.json
+
+# ===========================
+# Documentation
+# ===========================
+# LaTeX
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.pdf
+
+# Word documents temp files
+~$*.doc*
+~$*.ppt*
+
+# ===========================
+# Testing and Coverage
+# ===========================
+coverage/
+*.coverage
+.nyc_output/
+lcov.info
+test_results/
+reports/
+
+# ===========================
+# Environment and Configuration
+# ===========================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# API keys and secrets
+secrets.h
+config.h
+credentials.json
+firebase_options.dart
+
+# ===========================
+# Backup and Archive Files
+# ===========================
+*.zip
+*.tar.gz
+*.rar
+*.7z
+backup/
+backups/
+*.backup
+
+# ===========================
+# OS generated files
+# ===========================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# ===========================
+# Project Specific
+# ===========================
+# Hardware prototyping files
+*.fzz
+*.fzpz
+
+# Simulation files
+*.asc
+*.plt
+*.cir
+
+# Manufacturing files (uncomment if you don't want to track)
+# *.zip
+# *.tar
+# Assembly/
+# Fabrication/
+
+# Test data and logs
+test_data/
+logs/
+*.log.*
+
+# Personal notes and drafts
+notes/
+drafts/
+personal/
