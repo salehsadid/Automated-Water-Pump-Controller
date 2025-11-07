@@ -94,4 +94,3 @@ Please refer to the main project's CONTRIBUTING.md for guidelines.
 - Follow Flutter/Dart style guide
 - Use meaningful variable and function names
 - Comment complex logic
-- Write unit tests for business logic
